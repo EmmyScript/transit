@@ -7,12 +7,6 @@ import  Stats  from "./Stats";
 import "./style.css";
 
 
-
-
-
-
-
-
 const initialIitems =[
   {id: 1, description: 'passports', quantity: 2, packed: false },
 
@@ -100,6 +94,10 @@ async function calculate(arr){
 
     })
 
+    const handleSubmit =() =>{
+      console.log('clicked')
+    }
+
 
     
      async function convert() {
@@ -128,10 +126,10 @@ async function calculate(arr){
     
     return(
       <div>
-        <h1>Currency converted app</h1>
+        <h1>Currency converted app
         <h3>{isLoading && "Loading, wait pls..."}</h3>
         <input type="text"  value={amount} onChange={(e) =>setAmount(Number(e.target.value))}
-        disabled={isLoading}/>
+        disabled={isLoading} onSubmit={(handleSubmit)}/>
       
 
         <select value={fromCur} onChange={(e) => setFromCur(e.target.value)} disabled={isLoading}>
@@ -152,8 +150,10 @@ async function calculate(arr){
           <option value="NGN">NGN</option>
          
         </select>
+        </h1>
         <p>{converted} {toCur}
         </p>
+        
       </div>
     )
   }

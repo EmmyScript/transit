@@ -8,8 +8,8 @@ import{LuPalmtree} from "react-icons/lu";
 
 function Logo() {
   return (
-    <h1><span><LuPalmtree /></span>!ww far away</h1>
+    <h1><span><LuPalmtree /></span>enter list of item packed..or remained</h1>
   );
 }
 
-export default Logo
+export default Logo;
