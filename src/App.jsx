@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Form from "./Form";
+import Navbar from "./component/Navbar";
 
 import  PackingList  from "./PackingList";
 import  Stats  from "./Stats";
@@ -53,16 +54,9 @@ function handleClearList(){
 
   return(
     <div className="app">
-    <Logo />
-    <Form  onAddItems={handleAddItems} />
-    <PackingList  items={items} 
-    onDeleteItem ={handleDeleteItem}
-     onToggleItem ={handleToggleItem}
-      onClearList ={handleClearList} />
-    <Stats items={items} />
-    <Currency />
-
-    <Accordion data={faqs} />
+      <Navbar/>
+    <Currency/>
+    
 </div>
  
   );
@@ -80,6 +74,9 @@ async function calculate(arr){
     return result
 
 }
+
+
+// currency convert
 
   function Currency() {
     const[amount, setAmount]= useState(1);
@@ -125,14 +122,15 @@ async function calculate(arr){
   
     
     return(
-      <div>
-        <h1>Currency converted app
+      <div className="curren ">
+        
+        <h1 className="text-white">currency convert
         <h3>{isLoading && "Loading, wait pls..."}</h3>
         <input type="text"  value={amount} onChange={(e) =>setAmount(Number(e.target.value))}
         disabled={isLoading} onSubmit={(handleSubmit)}/>
       
 
-        <select value={fromCur} onChange={(e) => setFromCur(e.target.value)} disabled={isLoading}>
+        <select  className ="selectfrom" value={fromCur} onChange={(e) => setFromCur(e.target.value)} disabled={isLoading}>
 
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
@@ -142,7 +140,7 @@ async function calculate(arr){
         
          
         </select>
-        <select value={toCur} onChange={(e) =>setToCur(e.target.value)}disabled={isLoading}>
+        <select className ="selectto" value={toCur} onChange={(e) =>setToCur(e.target.value)}disabled={isLoading}>
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
           <option value="CAD">CAD</option>
@@ -155,6 +153,7 @@ async function calculate(arr){
         </p>
         
       </div>
+
     )
   }
 

@@ -13,3 +13,17 @@ function Logo() {
 }
 
 export default Logo;
+
+
+// copy all to App later
+
+//<Logo />
+   // <Form  onAddItems={handleAddItems} />
+   // <PackingList  items={items} 
+    //onDeleteItem ={handleDeleteItem}
+    // onToggleItem ={handleToggleItem}
+      //onClearList ={handleClearList} />
+   // <Stats items={items} />
+   // <Currency />
+
+    //<Accordion data={faqs} />

@@ -30,19 +30,10 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
+  flex-wrap: wrap;
+  
 }
 
-h1 {
-  text-align: center;
-  background-color: #f4a226;
-  font-family: "Monoton";
-  font-size: 8rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  word-spacing: 30px;
-  letter-spacing: -5px;
-  padding: 2.4rem 0;
-}
 
 .add-form {
   background-color: #e5771f;
@@ -150,3 +141,44 @@ input[type="checkbox"] {
   gap: 24px;
 }
 
+/* currency*/
+
+.curren{
+  
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  overflow: hidden;
+  flex-direction: column;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  background-color:black;
+  
+  font-family: "Monoton";
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  word-spacing: 30px;
+  letter-spacing: -5px;
+  padding: 2.4rem 0;
+  
+  padding-right: 20px;
+}
+
+
+.moneylog{
+  margin-top: 5px;
+  font-size: 100px;
+  width: 20%;
+}
+
+.selectfrom{
+  padding-top: 5px;
+  margin: 20px;
+}
