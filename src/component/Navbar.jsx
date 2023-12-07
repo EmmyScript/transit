@@ -15,7 +15,7 @@ const Navbar = () => {
 
     </a>
     
-   <h3>CURRENCY <span className="text-danger fw-bolder"> CONVERT</span></h3>
+   <h3>CURRENCY <span className="text-white fw-bolder bg-warning p-3"> CONVERTER</span></h3>
 
     
   </div>
