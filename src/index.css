@@ -146,12 +146,12 @@ input[type="checkbox"] {
 .curren{
   
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  
   align-items: center;
   flex-wrap: wrap;
   
-  overflow: hidden;
+  
   flex-direction: column;
   padding: 5px;
 }
@@ -173,12 +173,31 @@ h1 {
 
 
 .moneylog{
-  margin-top: 5px;
+  
   font-size: 100px;
-  width: 20%;
+  width: 30%;
 }
 
 .selectfrom{
   padding-top: 5px;
   margin: 20px;
+}
+.curr{
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+  white-space: wrap;
+}
+
+.form{
+  margin-right: 10px;
+  width: 70%;
+  margin-top: 3;
+}
+.nav{
+  text-transform: uppercase;
+  font-size: larger;
+  font-family: "Monoton";
+  
+  color: blue;
 }

@@ -53,7 +53,7 @@ function handleClearList(){
 }
 
   return(
-    <div className="app">
+    <div className=" curr container-fluid">
       <Navbar/>
     <Currency/>
     
@@ -126,11 +126,11 @@ async function calculate(arr){
         
         <h1 className="text-white">currency convert
         <h3>{isLoading && "Loading, wait pls..."}</h3>
-        <input type="text"  value={amount} onChange={(e) =>setAmount(Number(e.target.value))}
-        disabled={isLoading} onSubmit={(handleSubmit)}/>
+        <input type="text" className="form" value={amount} onChange={(e) =>setAmount(Number(e.target.value))}
+       onSubmit={(handleSubmit)}/>
       
 
-        <select  className ="selectfrom" value={fromCur} onChange={(e) => setFromCur(e.target.value)} disabled={isLoading}>
+        <select  className ="selectfrom" value={fromCur} onChange={(e) => setFromCur(e.target.value)} >
 
           <option value="USD">USD</option>
           <option value="EUR">EUR</option>
