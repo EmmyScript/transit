@@ -55,9 +55,9 @@ function handleClearList(){
   return(
     <div className=" curr container-fluid">
   
+<Navbar/>
 
-
-
+<Currency/>
 
       <Logo />
    <Form  onAddItems={handleAddItems} />
@@ -89,7 +89,6 @@ async function calculate(arr){
 
 // currency convert
 
-/*
   function Currency() {
     const[amount, setAmount]= useState(1);
     const[fromCur, setFromCur]= useState("EUR")
@@ -170,7 +169,7 @@ async function calculate(arr){
 
     )
   }
-*/
+
 
 // test 2
 
