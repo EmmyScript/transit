@@ -19,6 +19,9 @@ export  default function Stats({ items }) {
     and u already packed ${numPacked} 
     (${percentage}%)`}
       </em>
+
     </footer>
+
+    
   );
 }

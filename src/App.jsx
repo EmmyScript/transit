@@ -54,8 +54,19 @@ function handleClearList(){
 
   return(
     <div className=" curr container-fluid">
-      <Navbar/>
-    <Currency/>
+  
+
+
+
+
+      <Logo />
+   <Form  onAddItems={handleAddItems} />
+   <PackingList  items={items} 
+    onDeleteItem ={handleDeleteItem}
+     onToggleItem ={handleToggleItem}
+      onClearList ={handleClearList} />
+   <Stats items={items} />
+
     
 </div>
  
@@ -78,6 +89,7 @@ async function calculate(arr){
 
 // currency convert
 
+/*
   function Currency() {
     const[amount, setAmount]= useState(1);
     const[fromCur, setFromCur]= useState("EUR")
@@ -137,6 +149,7 @@ async function calculate(arr){
           <option value="CAD">CAD</option>
           <option value="INR">INR</option>
           
+          
         
          
         </select>
@@ -146,6 +159,7 @@ async function calculate(arr){
           <option value="CAD">CAD</option>
           <option value="INR">INR</option>
           <option value="NGN">NGN</option>
+          
          
         </select>
         </h1>
@@ -156,7 +170,7 @@ async function calculate(arr){
 
     )
   }
-
+*/
 
 // test 2
 

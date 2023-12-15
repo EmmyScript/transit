@@ -21,8 +21,10 @@ function Form({ onAddItems}){
   
     }
     return(
-      <form className="add-form" onSubmit={handleSubmit}>
-        <h3> www All thing are difficult before they become easy!!! every nxt level Demand a new version of u..</h3>
+      <>
+      
+      <form className="add-form " onSubmit={handleSubmit}>
+        
       
         <select value={quantity} onChange={(e) => setQuantity (e.target.value)}>
           {Array.from({length: 20}, (_, i) => i + 1).map((num) =>(
@@ -34,7 +36,10 @@ function Form({ onAddItems}){
         <input type="text" placeholder="item..." value={description}
          onChange={(e) => setDescription(e.target.value)}/>
         <button>Add</button>
+
+        
       </form>
+      </>
     );
   }
 

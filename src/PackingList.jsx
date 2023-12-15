@@ -34,15 +34,16 @@ export  default function PackingList({ items, onDeleteItem, onToggleItem, onClea
         ))}
       </ul>
 
-      <div className="actions">
+      <div className="actions mb-5">
         <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
           <option value='input'>Sort by input order</option>
           <option value='description'>Sort by description</option>
           <option value='packed'>Sort by packed status</option>
         </select>
-        <button onClick={onClearList}> Clear List </button>
+        <button  className ="btn btn-primary m-5 " onClick={onClearList}> Clear List </button>
+        
       </div>
-
+     
     </div>
   );
 }

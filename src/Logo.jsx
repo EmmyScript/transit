@@ -1,5 +1,5 @@
-import { FaBeer } from "react-icons/fa";
-import{LuPalmtree} from "react-icons/lu";
+import { FaBeer, FaStarOfDavid } from "react-icons/fa";
+import {GoListOrdered} from "react-icons/go"
 
 //export default function Logo(){
   //  return <h1><span><LuPalmtree /></span>far away</h1>
@@ -8,7 +8,7 @@ import{LuPalmtree} from "react-icons/lu";
 
 function Logo() {
   return (
-    <h1><span><LuPalmtree /></span>enter list of item packed..or remained</h1>
+    <h1 className="bg-warning text-black"><span><FaStarOfDavid /></span>enter list of item packed.. or remained <GoListOrdered /></h1>
   );
 }
 
@@ -27,3 +27,4 @@ export default Logo;
    // <Currency />
 
     //<Accordion data={faqs} />
+    

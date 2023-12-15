@@ -20,7 +20,7 @@ html {
 body {
   font-size: 2.4rem;
   font-family: sans-serif;
-  color: #5a3e2b;
+  
   font-family: "Quicksand";
   font-weight: 500;
 }
@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+   flex-wrap: wrap;
 }
 
 h3 {
@@ -158,8 +159,8 @@ input[type="checkbox"] {
 
 h1 {
   text-align: center;
-  background-color:black;
-  
+  background-color:white;
+  accent-color: #e5771f;
   font-family: "Monoton";
   font-size: 1rem;
   text-transform: uppercase;
@@ -200,4 +201,50 @@ h1 {
   font-family: "Monoton";
   
   color: blue;
+}
+
+
+/*scrolling */
+
+
+.scroll-container {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
